@@ -7,28 +7,35 @@ const Header: FC = () => {
   return (
     <header className="container mx-auto">
       <nav className="flex justify-between items-center py-8 mb-32">
-        <Image src="/img/logo.png" alt="sandbox logo" width="134" height="26" />
-        <ul className="flex gap-x-12 font-bold text-xl">
-          <li>
+        <Image src="/img/logo.png" alt="sandbox logo" width="150" height="25" />
+        <ul className="flex items-center gap-x-12 font-medium text-xl">
+          <li className="mt-2 group transition duration-300">
             <Link href="/about">About</Link>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
-          <li>
+          <li className="mt-2 group transition duration-300">
             <Link href="/services">Services</Link>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
-          <li>
+          <li className="mt-2 group transition duration-300">
             <Link href="/team">Team</Link>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
-          <li>
+          <li className="mt-2 group transition duration-300">
             <Link href="/solutions">Solutions</Link>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
-          <li>
+          <li className="mt-2 group transition duration-300">
             <Link href="/pricing">Pricing</Link>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
-          <li>
+          <li className="mt-2 group transition duration-300">
             <Link href="/blog">Blog</Link>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
-          <li>
+          <li className="mt-2 group transition duration-300">
             <Link href="/contact">Contact</Link>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
         </ul>
         <div className="flex gap-x-6">
