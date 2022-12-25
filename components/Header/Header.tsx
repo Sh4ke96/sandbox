@@ -2,12 +2,20 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "../Button/Button";
+import { BsFillInfoSquareFill, BsFillBrightnessHighFill } from "react-icons/bs";
 
 const Header: FC = () => {
   return (
     <header className="container mx-auto">
       <nav className="flex justify-between items-center py-8 mb-32">
-        <Image src="/img/logo.png" alt="sandbox logo" width="150" height="25" />
+        <Link href="/">
+          <Image
+            src="/img/logo.png"
+            alt="sandbox logo"
+            width="150"
+            height="25"
+          />
+        </Link>
         <ul className="flex items-center gap-x-12 font-medium text-xl">
           <li className="mt-2 group transition duration-300">
             <Link href="/about">About</Link>
@@ -38,9 +46,9 @@ const Header: FC = () => {
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
           </li>
         </ul>
-        <div className="flex gap-x-6">
-          <div className="w-8 h-8 bg-orange"></div>
-          <div className="w-8 h-8 bg-black"></div>
+        <div className="flex items-center gap-x-6">
+          <BsFillBrightnessHighFill className="text-black text-2xl" />
+          <BsFillInfoSquareFill className="text-black text-2xl" />
         </div>
       </nav>
       <div className="grid grid-cols-2 gap-x-16 items-center">
