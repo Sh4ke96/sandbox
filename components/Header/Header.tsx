@@ -13,7 +13,7 @@ const Header: FC = () => {
 
   return (
     <header className="container mx-auto">
-      <nav className="flex justify-between items-center py-8 px-4 mb-32">
+      <nav className="flex justify-between items-center py-8 px-4 mb-8 lg:mb-32">
         <Link href="/">
           <Image
             src="/img/logo.png"
@@ -53,7 +53,7 @@ const Header: FC = () => {
           </li>
         </ul>
         {navbarOpen && (
-          <div className="bg-black absolute top-0 left-0 h-screen w-3/4">
+          <div className="bg-black fixed top-0 left-0 h-screen w-2/4">
             <ul className="h-full flex flex-col justify-center items-center gap-y-4 font-medium text-xl text-white">
               <li className="group transition duration-300">
                 <Link href="/about">About</Link>
@@ -95,7 +95,7 @@ const Header: FC = () => {
           />
         </div>
       </nav>
-      {/* <div className="grid grid-cols-2 gap-x-16 items-center">
+      <div className="grid grid-cols-1 gap-y-12 px-16 mb-12 lg:grid-cols-2 gap-x-16 items-center">
         <div className="col-span-1">
           <Image
             src="/img/hero-bg.png"
@@ -106,7 +106,7 @@ const Header: FC = () => {
             className="w-full h-auto "
           />
         </div>
-        <div className="col-span-1 px-20">
+        <div className="col-span-1 lg:px-20">
           <h1 className="mb-8">Grow Your Business with Our Solutions.</h1>
           <p className="mb-8">
             We help our clients to increase their website traffic, rankings and
@@ -114,7 +114,7 @@ const Header: FC = () => {
           </p>
           <Button>Try it for free</Button>
         </div>
-      </div> */}
+      </div>
     </header>
   );
 };
