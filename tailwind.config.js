@@ -13,13 +13,16 @@ module.exports = {
       screens: {
         sm: "640px",
         md: "768px",
-        lg: "1024px",
+        lg: "966px",
         xl: "1200px",
         xxl: "1360px",
       },
       backgroundImage: {
         "gradient-primary":
           "linear-gradient(180deg, #fff8ef, rgba(255, 255, 255, 0) 100%)",
+      },
+      boxShadow: {
+        base: "0 0 1.25rem rgba(30,34,40,.06)",
       },
     },
   },
