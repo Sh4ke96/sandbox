@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         black: "#343f52",
         orange: "#fab758",
+        gray: "#aab0bc",
+        darkGray: "#3C4759",
+        lightBlue: "#f1f5fd",
       },
       screens: {
         sm: "640px",
@@ -20,9 +23,14 @@ module.exports = {
       backgroundImage: {
         "gradient-primary":
           "linear-gradient(180deg, #fff8ef, rgba(255, 255, 255, 0) 100%)",
+        "gradient-dotted": "radial-gradient(#fab758 2px, transparent 2.5px)",
+      },
+      backgroundSize: {
+        dotted: "0.75rem 0.75rem",
       },
       boxShadow: {
         base: "0 0 1.25rem rgba(30,34,40,.06)",
+        card: "0 .25rem 1.75rem rgba(30,34,40,.07)",
       },
     },
   },

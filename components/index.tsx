@@ -1,4 +1,5 @@
 import Header from "./Header/Header";
 import Wrapper from "./Wrapper/Wrapper";
+import SectionAbout from "./Sections/SectionAbout";
 
-export { Wrapper, Header };
+export { Wrapper, Header, SectionAbout };

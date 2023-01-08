@@ -16,7 +16,7 @@ const Header: FC = () => {
   useEffect(() => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", () =>
-        setFixed(window.pageYOffset > 200)
+        setFixed(window.pageYOffset > 100)
       );
     }
   }, []);
@@ -30,7 +30,7 @@ const Header: FC = () => {
             : "fixed w-full z-50 py-8 px-4 mb-8 lg:mb-32"
         }`}
       >
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="container flex items-center justify-between mx-auto">
           <Link href="/">
             <Image
               src="/img/logo.png"
@@ -39,81 +39,81 @@ const Header: FC = () => {
               height="25"
             />
           </Link>
-          <ul className="hidden lg:flex items-center gap-x-12 font-medium text-xl">
-            <li className="mt-2 group transition duration-300">
+          <ul className="items-center hidden text-xl font-medium lg:flex gap-x-12">
+            <li className="mt-2 transition duration-300 group">
               <Link href="/about">About</Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
             </li>
-            <li className="mt-2 group transition duration-300">
+            <li className="mt-2 transition duration-300 group">
               <Link href="/services">Services</Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
             </li>
-            <li className="mt-2 group transition duration-300">
+            <li className="mt-2 transition duration-300 group">
               <Link href="/team">Team</Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
             </li>
-            <li className="mt-2 group transition duration-300">
+            <li className="mt-2 transition duration-300 group">
               <Link href="/solutions">Solutions</Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
             </li>
-            <li className="mt-2 group transition duration-300">
+            <li className="mt-2 transition duration-300 group">
               <Link href="/pricing">Pricing</Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
             </li>
-            <li className="mt-2 group transition duration-300">
+            <li className="mt-2 transition duration-300 group">
               <Link href="/blog">Blog</Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
             </li>
-            <li className="mt-2 group transition duration-300">
+            <li className="mt-2 transition duration-300 group">
               <Link href="/contact">Contact</Link>
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-orange"></span>
             </li>
           </ul>
           {navbarOpen && (
-            <div className="bg-orange fixed top-0 left-0 z-50 h-screen w-full lg:hidden">
-              <ul className="h-full flex flex-col justify-center items-center gap-y-8 font-medium text-3xl text-black">
-                <li className="group transition duration-300">
+            <div className="fixed top-0 left-0 z-50 w-full h-screen bg-orange lg:hidden">
+              <ul className="flex flex-col items-center justify-center h-full text-3xl font-medium text-black gap-y-8">
+                <li className="transition duration-300 group">
                   <Link href="/about">About</Link>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </li>
-                <li className="group transition duration-300">
+                <li className="transition duration-300 group">
                   <Link href="/services">Services</Link>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </li>
-                <li className="group transition duration-300">
+                <li className="transition duration-300 group">
                   <Link href="/team">Team</Link>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </li>
-                <li className="group transition duration-300">
+                <li className="transition duration-300 group">
                   <Link href="/solutions">Solutions</Link>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </li>
-                <li className="group transition duration-300">
+                <li className="transition duration-300 group">
                   <Link href="/pricing">Pricing</Link>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </li>
-                <li className="group transition duration-300">
+                <li className="transition duration-300 group">
                   <Link href="/blog">Blog</Link>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </li>
-                <li className="group transition duration-300">
+                <li className="transition duration-300 group">
                   <Link href="/contact">Contact</Link>
                   <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black"></span>
                 </li>
               </ul>
             </div>
           )}
-          <div className="flex items-center gap-x-6 z-50">
-            <BsFillBrightnessHighFill className="text-black text-2xl cursor-pointer" />
-            <BsFillInfoSquareFill className="text-black text-2xl cursor-pointer" />
+          <div className="z-50 flex items-center gap-x-6">
+            <BsFillBrightnessHighFill className="text-2xl text-black cursor-pointer" />
+            <BsFillInfoSquareFill className="text-2xl text-black cursor-pointer" />
             <FaBars
-              className="lg:hidden text-black text-2xl cursor-pointer"
+              className="text-2xl text-black cursor-pointer lg:hidden"
               onClick={handleToggle}
             />
           </div>
         </div>
       </nav>
-      <div className="container mx-auto grid grid-cols-1 gap-y-12 px-8 mb-12 pt-28 lg:grid-cols-2 lg:ap-x-16 lg:items-center lg:pt-48 lg:px-16">
+      <div className="container grid grid-cols-1 px-8 mx-auto mb-32 gap-y-12 pt-28 lg:grid-cols-2 lg:ap-x-16 lg:items-center lg:pt-48 lg:px-16">
         <div className="col-span-1">
           <Image
             src="/img/hero-bg.png"
