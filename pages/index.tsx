@@ -1,5 +1,11 @@
 import Head from "next/head";
-import { Header, Wrapper, SectionAbout, SectionAnalyze } from "../components/";
+import {
+  Header,
+  Wrapper,
+  SectionAbout,
+  SectionAnalyze,
+  SectionStrategy,
+} from "../components/";
 
 export default function Home() {
   return (
@@ -14,6 +20,7 @@ export default function Home() {
         <Header />
         <SectionAbout />
         <SectionAnalyze />
+        <SectionStrategy />
       </Wrapper>
     </>
   );
