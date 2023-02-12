@@ -8,6 +8,7 @@ const SectionAbout: FC = () => {
       <Heading
         title="The service we offer is specifically designed to meet your needs."
         subtitle="What We Do?"
+        textPosition="text-center"
       />
       <div className="relative grid grid-cols-1 gap-8 px-16 md:grid-cols-2 xl:px-0 xl:gap-x-8 xl:grid-cols-4">
         <div className="absolute w-32 h-32 -top-6 left-7 xl:-left-9 -z-10 bg-dotted bg-gradient-dotted"></div>
