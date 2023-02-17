@@ -5,6 +5,8 @@ import {
   SectionAbout,
   SectionAnalyze,
   SectionStrategy,
+  SectionWhyUs,
+  SectionTeam,
 } from "../components/";
 
 export default function Home() {
@@ -21,6 +23,8 @@ export default function Home() {
         <SectionAbout />
         <SectionAnalyze />
         <SectionStrategy />
+        <SectionWhyUs />
+        <SectionTeam />
       </Wrapper>
     </>
   );
