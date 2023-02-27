@@ -5,6 +5,7 @@ import SectionAnalyze from "./Sections/SectionAnalyze";
 import SectionStrategy from "./Sections/SectionStrategy";
 import SectionWhyUs from "./Sections/SectionWhyUs";
 import SectionTeam from "./Sections/SectionTeam";
+import SectionSolutions from "./Sections/SectionSolutions";
 
 export {
   Wrapper,
@@ -14,4 +15,5 @@ export {
   SectionStrategy,
   SectionWhyUs,
   SectionTeam,
+  SectionSolutions
 };
