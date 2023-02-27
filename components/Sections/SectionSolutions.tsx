@@ -19,7 +19,7 @@ const SectionSolutions: FC = () => {
             egestas eget quam. Praesent commodo cursus.
           </p>
           <div>
-            <ul className="grid grid-cols-4 gap-x-12 gap-y-6">
+            <ul className="grid grid-cols-4 gap-x-12 gap-y-8">
               <li className="flex col-span-2 text-lg">
                 <BiCheckCircle className="w-6 h-6 mr-4 text-orange" />
                 Aenean quam ornare. Curabitur blandit.
